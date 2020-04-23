@@ -22,24 +22,24 @@
     </header>
     <main>
         <section class="survey-form">
-            <form action="#">
-                <label class="text-input" for="name">
+            <form action="#" id="survey-form">
+                <label class="text-input" for="name" id="name-label">
                     <p class="text-name">Name</p>
                     <input type="text" name="name" id="name" placeholder="Enter your name" required>
                 </label>
-                <label class="text-input" for="email">
+                <label class="text-input" for="email" id="email-label">
                     <p class="text-name">Email</p>
                     <input type="email" name="email" id="email" placeholder="Enter your email" required>
                 </label>
-                <label class="text-input" for="age">
+                <label class="text-input" for="number" id="number-label">
                     <p>Age <span>(optional)</span></p>
-                    <input type="text" name="Age" id="Age" placeholder="Age">
+                    <input type="number" name="number" id="number" placeholder="Age" min="10" max="100">
                 </label>
-                <label class="select-input" for="role">
+                <label class="select-input" for="dropdown">
                     <span>
                         Which option best describes your current role?
                     </span>
-                    <select name="role" id="role">
+                    <select name="dropdown" id="dropdown">
                         <option value="" selected>Select current role</option>
                         <option value="student">Student</option>
                         <option value="full time job">Full time job</option>
@@ -129,7 +129,7 @@
                     <textarea name="suggestions" id="suggestions" placeholder="Enter your comment here..."></textarea>
                 </label>
                 <div class="submit-button">
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </div>
             </form>
         </section>
